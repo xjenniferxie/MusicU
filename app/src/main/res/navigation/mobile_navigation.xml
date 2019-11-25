@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.example.musicu.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/to_tutorial"
+            app:destination="@id/tutorialFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -40,4 +44,15 @@
             android:id="@+id/openMessage"
             app:destination="@id/message2" />
     </fragment>
+
+
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/navigation_home" />
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.example.musicu.ui.home.TutorialFragment"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" />
+
 </navigation>
