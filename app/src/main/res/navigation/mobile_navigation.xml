@@ -19,13 +19,34 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.musicu.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/userProfile"
+            app:destination="@id/otherUser2" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.musicu.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/otherUser2"
+        android:name="com.example.musicu.ui.user.otherUser"
+        android:label="other_user_fragment"
+        tools:layout="@layout/other_user_fragment" >
+        <action
+            android:id="@+id/openMessage"
+            app:destination="@id/message2" />
+    </fragment>
+    <fragment
+        android:id="@+id/message2"
+        android:name="com.example.musicu.ui.user.message"
+        android:label="message_fragment"
+        tools:layout="@layout/message_fragment" />
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/navigation_home" />
     <fragment
         android:id="@+id/tutorialFragment"
         android:name="com.example.musicu.ui.home.TutorialFragment"
