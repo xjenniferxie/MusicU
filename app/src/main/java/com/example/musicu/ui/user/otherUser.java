@@ -13,6 +13,8 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.musicu.R;
 
@@ -27,7 +29,16 @@ public class otherUser extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.other_user_fragment, container, false);
+        View root = inflater.inflate(R.layout.other_user_fragment, container, false);
+        Button message_button = (Button) root.findViewById(R.id.message_button);
+        message_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavController nav = Navigation.findNavController(view);
+                nav.navigate(R.id.openMessage);
+            }
+        });
+        return root;
     }
 
     @Override
@@ -35,11 +46,8 @@ public class otherUser extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(OtherUserViewModel.class);
         // TODO: Use the ViewModel
+
     }
 
-    public void messageClick(View view) {
-        NavController nav = Navigation.findNavController(view);
-        nav.navigate(R.id.message);
-    }
 
 }
