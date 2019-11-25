@@ -23,6 +23,9 @@
         <action
             android:id="@+id/userProfile"
             app:destination="@id/otherUser2" />
+        <action
+            android:id="@+id/to_search_results"
+            app:destination="@id/searchResults2" />
     </fragment>
 
     <fragment
@@ -33,7 +36,7 @@
     <fragment
         android:id="@+id/otherUser2"
         android:name="com.example.musicu.ui.user.otherUser"
-        android:label="other_user_fragment"
+        android:label="Profile"
         tools:layout="@layout/other_user_fragment" >
         <action
             android:id="@+id/openMessage"
@@ -42,7 +45,7 @@
     <fragment
         android:id="@+id/message2"
         android:name="com.example.musicu.ui.user.message"
-        android:label="message_fragment"
+        android:label="Messages"
         tools:layout="@layout/message_fragment" />
     <navigation
         android:id="@+id/navigation"
@@ -50,6 +53,11 @@
     <fragment
         android:id="@+id/tutorialFragment"
         android:name="com.example.musicu.ui.home.TutorialFragment"
-        android:label="fragment_tutorial"
+        android:label="Tutorial"
         tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/searchResults2"
+        android:name="com.example.musicu.ui.dashboard.SearchResults"
+        android:label="Search Results"
+        tools:layout="@layout/fragment_search_results" />
 </navigation>
