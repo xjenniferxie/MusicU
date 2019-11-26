@@ -31,20 +31,20 @@
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.musicu.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_myprofile"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/message2"
         android:name="com.example.musicu.ui.user.message"
-        android:label="message_fragment"
+        android:label="@string/title_messages"
         tools:layout="@layout/message_fragment" />
 
     <fragment
         android:id="@+id/otherUser"
         android:name="com.example.musicu.ui.user.otherUser"
-        android:label="Profile"
-        tools:layout="@layout/other_user_fragment" >
+        android:label="@string/title_user_profile"
+        tools:layout="@layout/other_user_fragment">
         <action
             android:id="@+id/openMessage"
             app:destination="@id/message2" />

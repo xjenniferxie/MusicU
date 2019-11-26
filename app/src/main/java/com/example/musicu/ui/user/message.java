@@ -11,6 +11,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.musicu.R;
 
@@ -25,7 +28,12 @@ public class message extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.message_fragment, container, false);
+        View root = inflater.inflate(R.layout.message_fragment, container, false);
+        /*
+        ListView listview = (ListView) root.findViewById(R.id.messages_view);
+        Button imageButton = (Button) root.findViewById(R.id.button);
+        EditText message = (EditText)root.findViewById(R.id.editText);*/
+        return root;
     }
 
     @Override
