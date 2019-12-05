@@ -62,14 +62,11 @@
                 android:id="@+id/message_button"
                 android:layout_width="wrap_content"
                 android:layout_height="41dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginEnd="45dp"
-                android:layout_marginRight="45dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
                 android:background="#B2EFB2"
                 android:text="Message"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button"
                 app:layout_constraintTop_toTopOf="@+id/button" />
 
             <TextView
@@ -91,15 +88,14 @@
                 android:id="@+id/textView4"
                 android:layout_width="232dp"
                 android:layout_height="68dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="139dp"
+                android:layout_marginLeft="139dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
                 android:text="LA-based instrumentalist with 10 years of advanced guitar experience. Bass guitar in band Hello There. "
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <View
@@ -133,52 +129,42 @@
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#BB6BD9"
                 android:text="Guitar"
                 android:textColor="#FFFFFF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginTop="52dp"
                 android:background="#99F06CC9"
                 android:text="Producing"
                 android:textColor="#FFFFFF"
-                app:layout_constraintStart_toEndOf="@+id/button3"
-                app:layout_constraintTop_toTopOf="@+id/button3" />
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="wrap_content"
+                android:layout_width="88dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="52dp"
                 android:background="#C256CCF2"
                 android:text="Piano"
                 android:textColor="#FFFFFF"
+                android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/button4"
-                app:layout_constraintTop_toTopOf="@+id/button4" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="#BFF2C94C"
-                android:text="Singing"
-                android:textColor="#FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/button5"
-                app:layout_constraintTop_toTopOf="@+id/button5" />
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
 
             <View
 
@@ -246,24 +232,24 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="230dp"
-                android:layout_height="64dp"
+                android:layout_width="191dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
                 android:text="In this video, I’ll be explaining the fundamentals of jazz composition and an introduction to chords."
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.115"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="241dp"
-                android:layout_height="38dp"
+                android:layout_width="158dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
                 android:text="A Beginner's Guide to Live Sound Production"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -273,10 +259,12 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="250dp"
-                android:layout_height="66dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
                 android:text="In this video, I’ll be explaining the fundamentals of jazz composition and an introduction to chords."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView3"
